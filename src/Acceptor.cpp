@@ -11,7 +11,7 @@ Acceptor::Acceptor(EventLoop *_loop):loop(_loop) {
     sock->listen();
     sock->setnonblocking();
     
-    Channel *acceptChannel = new Channel(loop, sock->getFd());
+    acceptChannel = new Channel(loop, sock->getFd());
     std::function<void()> cb = std::bind(&Acceptor::acceptConnection, this);
     acceptChannel->setCallback(cb);
     acceptChannel->enableReading();
