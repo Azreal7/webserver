@@ -2,13 +2,17 @@
 #include "Connection.h"
 #include "Socket.h"
 #include "Channel.h"
+#include "Buffer.h"
 #include "Server.h"
+#include "util.h"
 #include <cstdio>
 #include <cerrno>
 #include <unistd.h>
 #include <cstring>
 
-Connection::Connection(EventLoop *_loop, Socket *_sock):loop(_loop), sock(_sock), channel(nullptr) {
+Connection::Connection(EventLoop *_loop, Socket *_sock):loop(_loop), sock(_sock), channel(nullptr), readBuffer(nullptr), writeBuffer(nullptr) {
+    readBuffer = new Buffer();
+    writeBuffer = new Buffer();
     channel = new Channel(loop, sock->getFd());
     std::function<void()> cb = std::bind(&Connection::echo, this, sock->getFd());
     channel->setCallback(cb);
@@ -28,18 +32,25 @@ void Connection::echo(int sockfd) {
         bzero(&buf, sizeof(buf));
         ssize_t bytes_read = read(sockfd, buf, sizeof(buf));
         if(bytes_read > 0){
-            printf("message from client fd %d: %s\n", sockfd, buf);
-            write(sockfd, buf, sizeof(buf));
+            readBuffer->append(buf, bytes_read);
         } else if(bytes_read == -1 && errno == EINTR){  //客户端正常中断、继续读取
             printf("continue reading");
             continue;
         } else if(bytes_read == -1 && ((errno == EAGAIN) || (errno == EWOULDBLOCK))){//非阻塞IO，这个条件表示数据全部读取完毕
-            printf("finish reading once, errno: %d\n", errno);
+            printf("message from client fd %d: %s\n", sockfd, readBuffer->c_str());
+
+            // 写缓冲区
+            writeBuffer->append(readBuffer->c_str(), readBuffer->size());
+            errif(write(sockfd, writeBuffer->c_str(), writeBuffer->size()) == -1, "socket write error");
+
+            readBuffer->clear();
+            writeBuffer->clear();
             break;
         } else if(bytes_read == 0){  //EOF，客户端断开连接
             printf("EOF, client fd %d disconnected\n", sockfd);
             deleteConnectionCallback(sock);
-            break; // 删除完还能break吗？
+            printf("1\n");
+            break; // 删除完还能break吗？居然还真能，为什么呢？
         }
     }
 }

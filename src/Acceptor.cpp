@@ -5,7 +5,7 @@
 #include "Server.h"
 #include <cstdio>
 
-Acceptor::Acceptor(EventLoop *_loop):loop(_loop) {
+Acceptor::Acceptor(EventLoop *_loop):loop(_loop), sock(nullptr), acceptChannel(nullptr) {
     sock = new Socket();
     addr = new InetAddress("127.0.0.1", 8888);
     sock->bind(addr);
@@ -16,11 +16,11 @@ Acceptor::Acceptor(EventLoop *_loop):loop(_loop) {
     std::function<void()> cb = std::bind(&Acceptor::acceptConnection, this);
     acceptChannel->setCallback(cb);
     acceptChannel->enableReading();
+    delete addr;
 }
 
 Acceptor::~Acceptor() {
     delete sock;
-    delete addr;
     delete acceptChannel;
 }
 
