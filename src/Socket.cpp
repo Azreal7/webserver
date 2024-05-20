@@ -48,3 +48,8 @@ int Socket::accept(InetAddress *_addr){
 int Socket::getFd(){
     return fd;
 }
+
+void Socket::connect(InetAddress *_addr) {
+    struct sockaddr_in addr = _addr->getAddr();
+    errif(::connect(fd, (sockaddr*)&addr, sizeof(addr)) == -1, "socket connect error"); 
+}

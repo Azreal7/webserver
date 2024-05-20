@@ -42,16 +42,3 @@ ThreadPool::~ThreadPool() {
         if(th.joinable()) th.join();
     }
 }
-
-void ThreadPool::add(std::function<void()> func) {
-    {
-        // 加锁
-        std::unique_lock<std::mutex> lock(tasks_mtx);
-        if(stop) {
-            throw std::runtime_error("ThreadPool already stop, can't add task any more");
-        }
-        tasks.emplace(func);
-        // 添加任务成功后，唤醒一个阻塞的线程
-        cv.notify_one();
-    }
-}

@@ -17,5 +17,6 @@ public:
     int accept(InetAddress*);
 
     int getFd();
+    void connect(InetAddress *_addr);
 };
 

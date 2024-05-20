@@ -29,3 +29,8 @@ const char* Buffer::c_str() {
 void Buffer::clear() {
     buf.clear();
 }
+
+void Buffer::setBuf(const char* _buf){
+    buf.clear();
+    buf.append(_buf);
+}

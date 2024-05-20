@@ -2,7 +2,7 @@
 #include "EventLoop.h"
 #include <unistd.h>
 
-Channel::Channel(EventLoop *_loop, int _fd) : loop(_loop), fd(_fd), events(0), revents(0), inEpoll(false){
+Channel::Channel(EventLoop *_loop, int _fd) : loop(_loop), fd(_fd), events(0), revents(0), inEpoll(false), useThreadPool(true){
 
 }
 
@@ -43,10 +43,29 @@ void Channel::setRevents(uint32_t _ev) {
 }
 
 void Channel::handleEvent() {
-    loop->addThread(callback);
-    // callback();
+    if(revents & (EPOLLIN | EPOLLPRI)) {
+        if(useThreadPool)
+            loop->addThread(readCallback);
+        else 
+            readCallback();
+    }
+    if(revents & (EPOLLOUT)) {
+        if(useThreadPool)
+            loop->addThread(writeCallback);
+        else
+            writeCallback();
+    }
 }
 
-void Channel::setCallback(std::function<void()> _cb) {
-    callback = _cb;
+void Channel::setReadCallback(std::function<void()> _cb) {
+    readCallback = _cb;
+}
+
+void Channel::useET() {
+    events |= EPOLLET;
+    loop->updateChannel(this);
+}
+
+void Channel::setUseThreadPool(bool use) {
+    useThreadPool = use;
 }

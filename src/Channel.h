@@ -10,7 +10,9 @@ private:
     uint32_t events; // 希望监听的事件
     uint32_t revents; // epoll返回Channel时发生的事件
     bool inEpoll; // 表示Channel是否已在epoll红黑树中
-    std::function<void()> callback;
+    bool useThreadPool;
+    std::function<void()> readCallback;
+    std::function<void()> writeCallback;
 
 public:
     Channel(EventLoop *_loop, int _fd);
@@ -24,8 +26,10 @@ public:
     uint32_t getRevents();
     bool getInEpoll();
     void setInEpoll();
+    void useET();
 
     // void setEvents(uint32_t);
     void setRevents(uint32_t);
-    void setCallback(std::function<void()>);
+    void setReadCallback(std::function<void()>);
+    void setUseThreadPool(bool use);
 };

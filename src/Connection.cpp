@@ -15,7 +15,8 @@ Connection::Connection(EventLoop *_loop, Socket *_sock):loop(_loop), sock(_sock)
     writeBuffer = new Buffer();
     channel = new Channel(loop, sock->getFd());
     std::function<void()> cb = std::bind(&Connection::echo, this, sock->getFd());
-    channel->setCallback(cb);
+    channel->setReadCallback(cb);
+    channel->setUseThreadPool(true);
     channel->enableReading();
 }
 
@@ -49,7 +50,7 @@ void Connection::echo(int sockfd) {
         } else if(bytes_read == 0){  //EOF，客户端断开连接
             printf("EOF, client fd %d disconnected\n", sockfd);
             deleteConnectionCallback(sock);
-            printf("1\n");
+            // printf("1\n");
             break; // 删除完还能break吗？居然还真能，为什么呢？
         }
     }
