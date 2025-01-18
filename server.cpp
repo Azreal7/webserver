@@ -1,7 +1,8 @@
-#include "src/EventLoop.h"
-#include "src/Server.h"
+#include "include/EventLoop.h"
+#include "include/Server.h"
 
-int main() {
+int main()
+{
     EventLoop *loop = new EventLoop();
     Server *server = new Server(loop);
     loop->loop();

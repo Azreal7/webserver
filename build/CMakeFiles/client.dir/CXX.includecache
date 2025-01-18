@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/guoyi/projects/webserver/client.cpp
+iostream
+-
+sys/socket.h
+-
+arpa/inet.h
+-
+string.h
+-
+unistd.h
+-
+include/util.h
+/home/guoyi/projects/webserver/include/util.h
+
+/home/guoyi/projects/webserver/include/util.h
+
+/home/guoyi/projects/webserver/src/util.cpp
+../include/util.h
+/home/guoyi/projects/webserver/include/util.h
+stdio.h
+-
+stdlib.h
+-
+

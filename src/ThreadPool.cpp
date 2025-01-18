@@ -1,4 +1,4 @@
-#include "ThreadPool.h"
+#include "../include/ThreadPool.h"
 #include <thread>
 #include <functional>
 #include <mutex>
@@ -6,9 +6,12 @@
 #include <vector>
 #include <condition_variable>
 
-ThreadPool::ThreadPool(int size):stop(false) {
-    for(int i = 0; i < size; ++i) {
-        threads.emplace_back(std::thread([this]() {
+ThreadPool::ThreadPool(int size) : stop(false)
+{
+    for (int i = 0; i < size; ++i)
+    {
+        threads.emplace_back(std::thread([this]()
+                                         {
             while(true) { 
                 std::function<void()> task;
                 {
@@ -24,12 +27,12 @@ ThreadPool::ThreadPool(int size):stop(false) {
                     tasks.pop();
                 }
                 task();
-            }
-        }));
+            } }));
     }
 }
 
-ThreadPool::~ThreadPool() {
+ThreadPool::~ThreadPool()
+{
     {
         // 将stop设为1，说明线程池即将销毁
         std::unique_lock<std::mutex> lock(tasks_mtx);
@@ -37,8 +40,10 @@ ThreadPool::~ThreadPool() {
     }
     // 通知所有线程
     cv.notify_all();
-    for(std::thread &th : threads) {
+    for (std::thread &th : threads)
+    {
         // 等待该进程销毁
-        if(th.joinable()) th.join();
+        if (th.joinable())
+            th.join();
     }
 }

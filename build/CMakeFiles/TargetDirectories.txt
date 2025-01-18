@@ -1,0 +1,4 @@
+/home/guoyi/projects/webserver/build/CMakeFiles/rebuild_cache.dir
+/home/guoyi/projects/webserver/build/CMakeFiles/edit_cache.dir
+/home/guoyi/projects/webserver/build/CMakeFiles/client.dir
+/home/guoyi/projects/webserver/build/CMakeFiles/server.dir
