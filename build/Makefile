@@ -196,6 +196,7 @@ src/Acceptor.o: src/Acceptor.cpp.o
 
 # target to build an object file
 src/Acceptor.cpp.o:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/Acceptor.cpp.o
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/Acceptor.cpp.o
 .PHONY : src/Acceptor.cpp.o
 
@@ -205,6 +206,7 @@ src/Acceptor.i: src/Acceptor.cpp.i
 
 # target to preprocess a source file
 src/Acceptor.cpp.i:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/Acceptor.cpp.i
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/Acceptor.cpp.i
 .PHONY : src/Acceptor.cpp.i
 
@@ -214,6 +216,7 @@ src/Acceptor.s: src/Acceptor.cpp.s
 
 # target to generate assembly for a file
 src/Acceptor.cpp.s:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/Acceptor.cpp.s
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/Acceptor.cpp.s
 .PHONY : src/Acceptor.cpp.s
 
@@ -223,6 +226,7 @@ src/Buffer.o: src/Buffer.cpp.o
 
 # target to build an object file
 src/Buffer.cpp.o:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/Buffer.cpp.o
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/Buffer.cpp.o
 .PHONY : src/Buffer.cpp.o
 
@@ -232,6 +236,7 @@ src/Buffer.i: src/Buffer.cpp.i
 
 # target to preprocess a source file
 src/Buffer.cpp.i:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/Buffer.cpp.i
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/Buffer.cpp.i
 .PHONY : src/Buffer.cpp.i
 
@@ -241,6 +246,7 @@ src/Buffer.s: src/Buffer.cpp.s
 
 # target to generate assembly for a file
 src/Buffer.cpp.s:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/Buffer.cpp.s
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/Buffer.cpp.s
 .PHONY : src/Buffer.cpp.s
 
@@ -250,6 +256,7 @@ src/Channel.o: src/Channel.cpp.o
 
 # target to build an object file
 src/Channel.cpp.o:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/Channel.cpp.o
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/Channel.cpp.o
 .PHONY : src/Channel.cpp.o
 
@@ -259,6 +266,7 @@ src/Channel.i: src/Channel.cpp.i
 
 # target to preprocess a source file
 src/Channel.cpp.i:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/Channel.cpp.i
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/Channel.cpp.i
 .PHONY : src/Channel.cpp.i
 
@@ -268,6 +276,7 @@ src/Channel.s: src/Channel.cpp.s
 
 # target to generate assembly for a file
 src/Channel.cpp.s:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/Channel.cpp.s
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/Channel.cpp.s
 .PHONY : src/Channel.cpp.s
 
@@ -277,6 +286,7 @@ src/Connection.o: src/Connection.cpp.o
 
 # target to build an object file
 src/Connection.cpp.o:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/Connection.cpp.o
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/Connection.cpp.o
 .PHONY : src/Connection.cpp.o
 
@@ -286,6 +296,7 @@ src/Connection.i: src/Connection.cpp.i
 
 # target to preprocess a source file
 src/Connection.cpp.i:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/Connection.cpp.i
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/Connection.cpp.i
 .PHONY : src/Connection.cpp.i
 
@@ -295,6 +306,7 @@ src/Connection.s: src/Connection.cpp.s
 
 # target to generate assembly for a file
 src/Connection.cpp.s:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/Connection.cpp.s
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/Connection.cpp.s
 .PHONY : src/Connection.cpp.s
 
@@ -304,6 +316,7 @@ src/Epoll.o: src/Epoll.cpp.o
 
 # target to build an object file
 src/Epoll.cpp.o:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/Epoll.cpp.o
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/Epoll.cpp.o
 .PHONY : src/Epoll.cpp.o
 
@@ -313,6 +326,7 @@ src/Epoll.i: src/Epoll.cpp.i
 
 # target to preprocess a source file
 src/Epoll.cpp.i:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/Epoll.cpp.i
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/Epoll.cpp.i
 .PHONY : src/Epoll.cpp.i
 
@@ -322,6 +336,7 @@ src/Epoll.s: src/Epoll.cpp.s
 
 # target to generate assembly for a file
 src/Epoll.cpp.s:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/Epoll.cpp.s
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/Epoll.cpp.s
 .PHONY : src/Epoll.cpp.s
 
@@ -331,6 +346,7 @@ src/EventLoop.o: src/EventLoop.cpp.o
 
 # target to build an object file
 src/EventLoop.cpp.o:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/EventLoop.cpp.o
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/EventLoop.cpp.o
 .PHONY : src/EventLoop.cpp.o
 
@@ -340,6 +356,7 @@ src/EventLoop.i: src/EventLoop.cpp.i
 
 # target to preprocess a source file
 src/EventLoop.cpp.i:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/EventLoop.cpp.i
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/EventLoop.cpp.i
 .PHONY : src/EventLoop.cpp.i
 
@@ -349,6 +366,7 @@ src/EventLoop.s: src/EventLoop.cpp.s
 
 # target to generate assembly for a file
 src/EventLoop.cpp.s:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/EventLoop.cpp.s
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/EventLoop.cpp.s
 .PHONY : src/EventLoop.cpp.s
 
@@ -358,6 +376,7 @@ src/InetAddress.o: src/InetAddress.cpp.o
 
 # target to build an object file
 src/InetAddress.cpp.o:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/InetAddress.cpp.o
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/InetAddress.cpp.o
 .PHONY : src/InetAddress.cpp.o
 
@@ -367,6 +386,7 @@ src/InetAddress.i: src/InetAddress.cpp.i
 
 # target to preprocess a source file
 src/InetAddress.cpp.i:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/InetAddress.cpp.i
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/InetAddress.cpp.i
 .PHONY : src/InetAddress.cpp.i
 
@@ -376,6 +396,7 @@ src/InetAddress.s: src/InetAddress.cpp.s
 
 # target to generate assembly for a file
 src/InetAddress.cpp.s:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/InetAddress.cpp.s
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/InetAddress.cpp.s
 .PHONY : src/InetAddress.cpp.s
 
@@ -385,6 +406,7 @@ src/Server.o: src/Server.cpp.o
 
 # target to build an object file
 src/Server.cpp.o:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/Server.cpp.o
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/Server.cpp.o
 .PHONY : src/Server.cpp.o
 
@@ -394,6 +416,7 @@ src/Server.i: src/Server.cpp.i
 
 # target to preprocess a source file
 src/Server.cpp.i:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/Server.cpp.i
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/Server.cpp.i
 .PHONY : src/Server.cpp.i
 
@@ -403,6 +426,7 @@ src/Server.s: src/Server.cpp.s
 
 # target to generate assembly for a file
 src/Server.cpp.s:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/Server.cpp.s
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/Server.cpp.s
 .PHONY : src/Server.cpp.s
 
@@ -412,6 +436,7 @@ src/Socket.o: src/Socket.cpp.o
 
 # target to build an object file
 src/Socket.cpp.o:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/Socket.cpp.o
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/Socket.cpp.o
 .PHONY : src/Socket.cpp.o
 
@@ -421,6 +446,7 @@ src/Socket.i: src/Socket.cpp.i
 
 # target to preprocess a source file
 src/Socket.cpp.i:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/Socket.cpp.i
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/Socket.cpp.i
 .PHONY : src/Socket.cpp.i
 
@@ -430,6 +456,7 @@ src/Socket.s: src/Socket.cpp.s
 
 # target to generate assembly for a file
 src/Socket.cpp.s:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/Socket.cpp.s
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/Socket.cpp.s
 .PHONY : src/Socket.cpp.s
 
@@ -439,6 +466,7 @@ src/ThreadPool.o: src/ThreadPool.cpp.o
 
 # target to build an object file
 src/ThreadPool.cpp.o:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/ThreadPool.cpp.o
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/ThreadPool.cpp.o
 .PHONY : src/ThreadPool.cpp.o
 
@@ -448,6 +476,7 @@ src/ThreadPool.i: src/ThreadPool.cpp.i
 
 # target to preprocess a source file
 src/ThreadPool.cpp.i:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/ThreadPool.cpp.i
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/ThreadPool.cpp.i
 .PHONY : src/ThreadPool.cpp.i
 
@@ -457,6 +486,7 @@ src/ThreadPool.s: src/ThreadPool.cpp.s
 
 # target to generate assembly for a file
 src/ThreadPool.cpp.s:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/ThreadPool.cpp.s
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/ThreadPool.cpp.s
 .PHONY : src/ThreadPool.cpp.s
 

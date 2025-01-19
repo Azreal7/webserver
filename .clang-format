@@ -1,0 +1,14 @@
+BasedOnStyle: Google
+DerivePointerAlignment: false
+PointerAlignment: Right
+ColumnLimit: 120
+
+# Default for clang-8, changed in later clangs. Set explicitly for forwards
+# compatibility with modern clangs
+IncludeBlocks: Preserve
+
+IndentWidth: 4       # 一个 Tab 键的宽度，通常是 4
+UseTab: Always       # 强制使用 Tab 而不是空格
+TabWidth: 4          # 定义 Tab 的显示宽度
+AccessModifierOffset: -4  # 设置访问修饰符的缩进偏移为 -2
+IndentAccessModifiers: false  # 禁止对访问修饰符进行缩进

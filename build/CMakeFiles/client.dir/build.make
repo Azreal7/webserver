@@ -57,22 +57,9 @@ include CMakeFiles/client.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/client.dir/flags.make
 
-CMakeFiles/client.dir/src/util.cpp.o: CMakeFiles/client.dir/flags.make
-CMakeFiles/client.dir/src/util.cpp.o: ../src/util.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guoyi/projects/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/client.dir/src/util.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/client.dir/src/util.cpp.o -c /home/guoyi/projects/webserver/src/util.cpp
-
-CMakeFiles/client.dir/src/util.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/src/util.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guoyi/projects/webserver/src/util.cpp > CMakeFiles/client.dir/src/util.cpp.i
-
-CMakeFiles/client.dir/src/util.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/src/util.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guoyi/projects/webserver/src/util.cpp -o CMakeFiles/client.dir/src/util.cpp.s
-
 CMakeFiles/client.dir/client.cpp.o: CMakeFiles/client.dir/flags.make
 CMakeFiles/client.dir/client.cpp.o: ../client.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guoyi/projects/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/client.dir/client.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guoyi/projects/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/client.dir/client.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/client.dir/client.cpp.o -c /home/guoyi/projects/webserver/client.cpp
 
 CMakeFiles/client.dir/client.cpp.i: cmake_force
@@ -83,19 +70,182 @@ CMakeFiles/client.dir/client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/client.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guoyi/projects/webserver/client.cpp -o CMakeFiles/client.dir/client.cpp.s
 
+CMakeFiles/client.dir/src/Acceptor.cpp.o: CMakeFiles/client.dir/flags.make
+CMakeFiles/client.dir/src/Acceptor.cpp.o: ../src/Acceptor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guoyi/projects/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/client.dir/src/Acceptor.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/client.dir/src/Acceptor.cpp.o -c /home/guoyi/projects/webserver/src/Acceptor.cpp
+
+CMakeFiles/client.dir/src/Acceptor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/src/Acceptor.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guoyi/projects/webserver/src/Acceptor.cpp > CMakeFiles/client.dir/src/Acceptor.cpp.i
+
+CMakeFiles/client.dir/src/Acceptor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/src/Acceptor.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guoyi/projects/webserver/src/Acceptor.cpp -o CMakeFiles/client.dir/src/Acceptor.cpp.s
+
+CMakeFiles/client.dir/src/Buffer.cpp.o: CMakeFiles/client.dir/flags.make
+CMakeFiles/client.dir/src/Buffer.cpp.o: ../src/Buffer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guoyi/projects/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/client.dir/src/Buffer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/client.dir/src/Buffer.cpp.o -c /home/guoyi/projects/webserver/src/Buffer.cpp
+
+CMakeFiles/client.dir/src/Buffer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/src/Buffer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guoyi/projects/webserver/src/Buffer.cpp > CMakeFiles/client.dir/src/Buffer.cpp.i
+
+CMakeFiles/client.dir/src/Buffer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/src/Buffer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guoyi/projects/webserver/src/Buffer.cpp -o CMakeFiles/client.dir/src/Buffer.cpp.s
+
+CMakeFiles/client.dir/src/Channel.cpp.o: CMakeFiles/client.dir/flags.make
+CMakeFiles/client.dir/src/Channel.cpp.o: ../src/Channel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guoyi/projects/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/client.dir/src/Channel.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/client.dir/src/Channel.cpp.o -c /home/guoyi/projects/webserver/src/Channel.cpp
+
+CMakeFiles/client.dir/src/Channel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/src/Channel.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guoyi/projects/webserver/src/Channel.cpp > CMakeFiles/client.dir/src/Channel.cpp.i
+
+CMakeFiles/client.dir/src/Channel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/src/Channel.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guoyi/projects/webserver/src/Channel.cpp -o CMakeFiles/client.dir/src/Channel.cpp.s
+
+CMakeFiles/client.dir/src/Connection.cpp.o: CMakeFiles/client.dir/flags.make
+CMakeFiles/client.dir/src/Connection.cpp.o: ../src/Connection.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guoyi/projects/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/client.dir/src/Connection.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/client.dir/src/Connection.cpp.o -c /home/guoyi/projects/webserver/src/Connection.cpp
+
+CMakeFiles/client.dir/src/Connection.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/src/Connection.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guoyi/projects/webserver/src/Connection.cpp > CMakeFiles/client.dir/src/Connection.cpp.i
+
+CMakeFiles/client.dir/src/Connection.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/src/Connection.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guoyi/projects/webserver/src/Connection.cpp -o CMakeFiles/client.dir/src/Connection.cpp.s
+
+CMakeFiles/client.dir/src/Epoll.cpp.o: CMakeFiles/client.dir/flags.make
+CMakeFiles/client.dir/src/Epoll.cpp.o: ../src/Epoll.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guoyi/projects/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/client.dir/src/Epoll.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/client.dir/src/Epoll.cpp.o -c /home/guoyi/projects/webserver/src/Epoll.cpp
+
+CMakeFiles/client.dir/src/Epoll.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/src/Epoll.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guoyi/projects/webserver/src/Epoll.cpp > CMakeFiles/client.dir/src/Epoll.cpp.i
+
+CMakeFiles/client.dir/src/Epoll.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/src/Epoll.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guoyi/projects/webserver/src/Epoll.cpp -o CMakeFiles/client.dir/src/Epoll.cpp.s
+
+CMakeFiles/client.dir/src/EventLoop.cpp.o: CMakeFiles/client.dir/flags.make
+CMakeFiles/client.dir/src/EventLoop.cpp.o: ../src/EventLoop.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guoyi/projects/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/client.dir/src/EventLoop.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/client.dir/src/EventLoop.cpp.o -c /home/guoyi/projects/webserver/src/EventLoop.cpp
+
+CMakeFiles/client.dir/src/EventLoop.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/src/EventLoop.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guoyi/projects/webserver/src/EventLoop.cpp > CMakeFiles/client.dir/src/EventLoop.cpp.i
+
+CMakeFiles/client.dir/src/EventLoop.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/src/EventLoop.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guoyi/projects/webserver/src/EventLoop.cpp -o CMakeFiles/client.dir/src/EventLoop.cpp.s
+
+CMakeFiles/client.dir/src/InetAddress.cpp.o: CMakeFiles/client.dir/flags.make
+CMakeFiles/client.dir/src/InetAddress.cpp.o: ../src/InetAddress.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guoyi/projects/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/client.dir/src/InetAddress.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/client.dir/src/InetAddress.cpp.o -c /home/guoyi/projects/webserver/src/InetAddress.cpp
+
+CMakeFiles/client.dir/src/InetAddress.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/src/InetAddress.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guoyi/projects/webserver/src/InetAddress.cpp > CMakeFiles/client.dir/src/InetAddress.cpp.i
+
+CMakeFiles/client.dir/src/InetAddress.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/src/InetAddress.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guoyi/projects/webserver/src/InetAddress.cpp -o CMakeFiles/client.dir/src/InetAddress.cpp.s
+
+CMakeFiles/client.dir/src/Server.cpp.o: CMakeFiles/client.dir/flags.make
+CMakeFiles/client.dir/src/Server.cpp.o: ../src/Server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guoyi/projects/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/client.dir/src/Server.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/client.dir/src/Server.cpp.o -c /home/guoyi/projects/webserver/src/Server.cpp
+
+CMakeFiles/client.dir/src/Server.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/src/Server.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guoyi/projects/webserver/src/Server.cpp > CMakeFiles/client.dir/src/Server.cpp.i
+
+CMakeFiles/client.dir/src/Server.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/src/Server.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guoyi/projects/webserver/src/Server.cpp -o CMakeFiles/client.dir/src/Server.cpp.s
+
+CMakeFiles/client.dir/src/Socket.cpp.o: CMakeFiles/client.dir/flags.make
+CMakeFiles/client.dir/src/Socket.cpp.o: ../src/Socket.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guoyi/projects/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/client.dir/src/Socket.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/client.dir/src/Socket.cpp.o -c /home/guoyi/projects/webserver/src/Socket.cpp
+
+CMakeFiles/client.dir/src/Socket.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/src/Socket.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guoyi/projects/webserver/src/Socket.cpp > CMakeFiles/client.dir/src/Socket.cpp.i
+
+CMakeFiles/client.dir/src/Socket.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/src/Socket.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guoyi/projects/webserver/src/Socket.cpp -o CMakeFiles/client.dir/src/Socket.cpp.s
+
+CMakeFiles/client.dir/src/ThreadPool.cpp.o: CMakeFiles/client.dir/flags.make
+CMakeFiles/client.dir/src/ThreadPool.cpp.o: ../src/ThreadPool.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guoyi/projects/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/client.dir/src/ThreadPool.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/client.dir/src/ThreadPool.cpp.o -c /home/guoyi/projects/webserver/src/ThreadPool.cpp
+
+CMakeFiles/client.dir/src/ThreadPool.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/src/ThreadPool.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guoyi/projects/webserver/src/ThreadPool.cpp > CMakeFiles/client.dir/src/ThreadPool.cpp.i
+
+CMakeFiles/client.dir/src/ThreadPool.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/src/ThreadPool.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guoyi/projects/webserver/src/ThreadPool.cpp -o CMakeFiles/client.dir/src/ThreadPool.cpp.s
+
+CMakeFiles/client.dir/src/util.cpp.o: CMakeFiles/client.dir/flags.make
+CMakeFiles/client.dir/src/util.cpp.o: ../src/util.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guoyi/projects/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/client.dir/src/util.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/client.dir/src/util.cpp.o -c /home/guoyi/projects/webserver/src/util.cpp
+
+CMakeFiles/client.dir/src/util.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/src/util.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guoyi/projects/webserver/src/util.cpp > CMakeFiles/client.dir/src/util.cpp.i
+
+CMakeFiles/client.dir/src/util.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/src/util.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guoyi/projects/webserver/src/util.cpp -o CMakeFiles/client.dir/src/util.cpp.s
+
 # Object files for target client
 client_OBJECTS = \
-"CMakeFiles/client.dir/src/util.cpp.o" \
-"CMakeFiles/client.dir/client.cpp.o"
+"CMakeFiles/client.dir/client.cpp.o" \
+"CMakeFiles/client.dir/src/Acceptor.cpp.o" \
+"CMakeFiles/client.dir/src/Buffer.cpp.o" \
+"CMakeFiles/client.dir/src/Channel.cpp.o" \
+"CMakeFiles/client.dir/src/Connection.cpp.o" \
+"CMakeFiles/client.dir/src/Epoll.cpp.o" \
+"CMakeFiles/client.dir/src/EventLoop.cpp.o" \
+"CMakeFiles/client.dir/src/InetAddress.cpp.o" \
+"CMakeFiles/client.dir/src/Server.cpp.o" \
+"CMakeFiles/client.dir/src/Socket.cpp.o" \
+"CMakeFiles/client.dir/src/ThreadPool.cpp.o" \
+"CMakeFiles/client.dir/src/util.cpp.o"
 
 # External object files for target client
 client_EXTERNAL_OBJECTS =
 
-../bin/client: CMakeFiles/client.dir/src/util.cpp.o
 ../bin/client: CMakeFiles/client.dir/client.cpp.o
+../bin/client: CMakeFiles/client.dir/src/Acceptor.cpp.o
+../bin/client: CMakeFiles/client.dir/src/Buffer.cpp.o
+../bin/client: CMakeFiles/client.dir/src/Channel.cpp.o
+../bin/client: CMakeFiles/client.dir/src/Connection.cpp.o
+../bin/client: CMakeFiles/client.dir/src/Epoll.cpp.o
+../bin/client: CMakeFiles/client.dir/src/EventLoop.cpp.o
+../bin/client: CMakeFiles/client.dir/src/InetAddress.cpp.o
+../bin/client: CMakeFiles/client.dir/src/Server.cpp.o
+../bin/client: CMakeFiles/client.dir/src/Socket.cpp.o
+../bin/client: CMakeFiles/client.dir/src/ThreadPool.cpp.o
+../bin/client: CMakeFiles/client.dir/src/util.cpp.o
 ../bin/client: CMakeFiles/client.dir/build.make
 ../bin/client: CMakeFiles/client.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/guoyi/projects/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../bin/client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/guoyi/projects/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable ../bin/client"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/client.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

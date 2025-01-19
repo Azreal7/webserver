@@ -1,22 +1,26 @@
 #pragma once
 
+#include <cstdint>
+
 class InetAddress;
-class Socket
-{
+class Socket {
 private:
-    int fd;
+	int fd;
+
 public:
-    Socket();
-    Socket(int);
-    ~Socket();
+	Socket();
+	explicit Socket(int);
+	~Socket();
 
-    void bind(InetAddress*);
-    void listen();
-    void setnonblocking();
+	void bind(InetAddress *);
+	void listen();
+	void setnonblocking();
 
-    int accept(InetAddress*);
+	int accept(InetAddress *);
 
-    int getFd();
-    void connect(InetAddress *_addr);
+	int getFd();
+	void connect(InetAddress *_addr);
+	void connect(const char *ip, uint16_t port);
+
+	bool isNonBlocking();
 };
-

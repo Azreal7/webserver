@@ -20,9 +20,9 @@ file(GLOB SERVER_SRC
     "${CMAKE_SOURCE_DIR}/server.cpp"
 )
 
-set(CLIENT_SRC
-    "${SRC_DIR}/util.cpp"
-    "${INCLUDE_DIR}/util.h"
+file(GLOB CLIENT_SRC
+    "${SRC_DIR}/*.cpp"
+    "${INCLUDE_DIR}/*.h"
     "${CMAKE_SOURCE_DIR}/client.cpp"
 )
 
